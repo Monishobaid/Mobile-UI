@@ -1,0 +1,122 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arimo', sans-serif;
+  }
+  
+  /* Apply mobile and desktop design */
+  .wrap {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .search-container {
+    width: 100%;
+    background-color: black;
+    padding: 15px; /* Ensure search takes full width */
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+  }
+
+  .task-list{
+    width: 100%;
+    background-color: white;
+
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Poiret One', cursive;
+  }
+  
+  .task-list li:hover {
+    transform: translateY(-3px);
+  }
+  
+  .task-details {
+    flex: 1;
+  }
+  
+  .start-button {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .start-button:hover {
+    background-color: black;
+    color: white;
+  }
+  .footer {
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .add-button {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    border: 0.5px solid black;
+    width: 80%;
+  }
+  
+  .add-button:hover {
+    background-color: black;
+    color: white;
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    
+    .search-container {
+      margin-bottom: 10px;
+    }
+    
+    .task-list li {
+      padding: 10px;
+    }
+  }

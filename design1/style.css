@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+  }
+  
+  .wrap {
+    background-color: black;
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  circle span {
+    width: 70px;
+  }
+  
+  circle {
+    width: 250px; 
+    height: 250px; 
+    position: absolute;
+  }
+  
+  circle:first-child {
+    background: #006400;
+    top: 20%; 
+    right: 40%;
+    border-radius: 50%; 
+    z-index: 1;
+  }
+  
+  circle:last-child {
+    background: orangered;
+    top: 35%; 
+    left: 48%; 
+    border-radius: 50%;
+  }
+  
+  circle span {
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    color: black;
+    position: absolute;
+    font-size: 30px;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  footer button {
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 95%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 0.5px solid white;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: 'Maven Pro', sans-serif;
+  }
+  
+  footer button:hover {
+    background-color: white;
+    color: black;
+  }
+  
